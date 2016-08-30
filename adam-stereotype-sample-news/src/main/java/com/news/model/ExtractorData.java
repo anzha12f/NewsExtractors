@@ -1,4 +1,4 @@
-package com.news.model.adam;
+package com.news.model;
 
 import java.util.ArrayList;
 import java.util.List;

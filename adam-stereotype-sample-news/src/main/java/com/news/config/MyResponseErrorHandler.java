@@ -1,4 +1,4 @@
-package com.news.config.adam;
+package com.news.config;
 
 import java.io.IOException;
 

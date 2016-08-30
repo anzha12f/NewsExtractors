@@ -1,9 +1,9 @@
 /*
  * Interface for DAO 
  */
-package com.news.dao.adam;
+package com.news.daos;
 
-import com.news.model.adam.NewsExtract;
+import com.news.models.NewsExtract;
 
 public interface NewsExtractDAO {
 	public void addNewsExtract(NewsExtract newsExtract);

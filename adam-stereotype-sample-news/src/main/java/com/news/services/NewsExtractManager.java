@@ -2,10 +2,10 @@
  * Interface for General News Services
  */
 
-package com.news.service.adam;
+package com.news.services;
 
 
-import com.news.model.adam.NewsExtract;
+import com.news.models.NewsExtract;
 
 public interface NewsExtractManager {
 	public void extractNews();

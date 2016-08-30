@@ -1,41 +1,22 @@
-package com.news.adam;
+package com.news.domains;
 
-import java.util.List;
 
-import javax.inject.Inject;
-import javax.inject.Named;
-
-import org.apache.http.impl.client.HttpClients;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.http.HttpEntity;
-import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpMethod;
-import org.springframework.http.MediaType;
-import org.springframework.http.client.ClientHttpRequestFactory;
-import org.springframework.http.client.HttpComponentsClientHttpRequestFactory;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.web.client.HttpStatusCodeException;
-import org.springframework.web.client.RestClientException;
-import org.springframework.web.client.RestTemplate;
 
-import com.news.model.adam.NewsExtractor;
-import com.news.service.adam.NewsExtractManager;
-import com.news.service.adam.NewsExtractManagerImp;
-
-
+import com.news.services.NewsExtractManager;
+@ComponentScan("com.news.services")
 @SpringBootApplication
 public class AdamStereotypeSampleNewsApplication implements CommandLineRunner {
 
-	@Autowired
-	@Qualifier("NewsExtractManagerImp")
-	public NewsExtractManagerImp newsExtractManager;
+@Autowired
+	// @Qualifier("NewsExtractManagerImp")
+private NewsExtractManager newsExtractManager;
 	
 	 @SuppressWarnings("unused")
 	private static final Logger log = LoggerFactory.getLogger(AdamStereotypeSampleNewsApplication.class);

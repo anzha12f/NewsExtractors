@@ -1,10 +1,10 @@
-package com.news.dao.adam;
+package com.news.daos;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
-import com.news.model.adam.NewsExtract;
-import com.news.repo.adam.NewsExtractRepository;
+import com.news.models.NewsExtract;
+import com.news.repos.NewsExtractRepository;
 
 @Repository
 public class NewsExtractDAOImp implements NewsExtractDAO {

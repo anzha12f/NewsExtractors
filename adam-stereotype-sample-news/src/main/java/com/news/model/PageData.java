@@ -1,4 +1,4 @@
-package com.news.model.adam;
+package com.news.model;
 
 public class PageData {
 	

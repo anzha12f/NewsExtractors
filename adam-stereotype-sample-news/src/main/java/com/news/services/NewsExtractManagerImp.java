@@ -1,21 +1,18 @@
 /*
  * This is News Extractor service Implementation
  */
-package com.news.service.adam;
+package com.news.services;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.List;
 
-import javax.inject.Named;
-
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Service;
 
-import com.news.dao.adam.NewsExtractDAO;
-import com.news.model.adam.NewsExtract;
+import com.news.daos.NewsExtractDAO;
+import com.news.models.NewsExtract;
 import com.opencsv.CSVReader;
 import com.opencsv.bean.ColumnPositionMappingStrategy;
 import com.opencsv.bean.CsvToBean;
